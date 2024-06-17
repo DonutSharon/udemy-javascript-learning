@@ -6,10 +6,10 @@ let shoppingList = ['apple sapling', 'peach sapling'];
 // shift - remove from start 
 
 let topSongs = [
-    'Armagedon',
-    'Heya',
-    'Fri[end]s',
-    'Wife'
+	'Armagedon',
+	'Heya',
+	'Fri[end]s',
+	'Wife'
 ];
 
 // add to end - push - changing length of array
@@ -17,14 +17,14 @@ topSongs.push('Supernova')
 
 // Array Methods
 /**
-* concat
-* includes
-* indexOf
-* join
-* reverse
-* slice
-* splice
-* sort
+	* concat
+	* includes
+	* indexOf
+	* join
+	* reverse
+	* slice
+	* splice
+	* sort
 */
 
 // sort - changes final array
@@ -52,8 +52,13 @@ let array2 = array1
 /* Objects - Collections of Properties [key-value pairs] */
 
 const stardewValleyInfo = {
-    season: 'Spring',
-    day: 'monday',
-    crop: 'parnsips',
-    cost: 250,
+	season: 'Spring',
+	day: 'monday',
+	crop: 'parnsips',
+	cost: 250,
+}
+
+const nums = {
+	100: "one hundred",
+	16: "sixteen",
 }
