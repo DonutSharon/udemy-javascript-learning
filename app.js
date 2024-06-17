@@ -62,3 +62,31 @@ const nums = {
 	100: "one hundred",
 	16: "sixteen",
 }
+
+/* Loops: Repeatedly run code many times */
+/* For-loops */
+/*
+ 
+	for (
+		[initialExpression];
+		[condition];
+		[incrementExpression]
+	)
+ 
+*/
+
+// for(let i = 1; i <= 10; i++) {
+
+// }
+
+//for ... of
+
+// for(variable of iterable) {
+// 	statements
+// }
+
+let subreddits = ['soccer', 'popheads', 'cringe', 'books'];
+
+for (let sub of subreddits) {
+	console.log(sub)
+}
