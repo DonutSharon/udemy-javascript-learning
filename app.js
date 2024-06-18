@@ -97,3 +97,27 @@ function grumpus() {
 	console.log("hi");
 	console.log("goodbye");
 }
+
+/* Function Expressions */
+// functions are objects
+
+function add(x, y) {
+	return x + y;
+}
+
+const sum = function (x, y) {
+	return x + y;
+}
+const sub = function (x, y) {
+	return x - y;
+}
+const mul = function (x, y) {
+	return x * y;
+}
+const div = function (x, y) {
+	return x / y;
+}
+
+const operations = [add, sub, mul, div]
+
+
