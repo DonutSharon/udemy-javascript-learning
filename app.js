@@ -90,3 +90,10 @@ let subreddits = ['soccer', 'popheads', 'cringe', 'books'];
 for (let sub of subreddits) {
 	console.log(sub)
 }
+
+/* Functions */
+function grumpus() {
+	console.log("hello");
+	console.log("hi");
+	console.log("goodbye");
+}
