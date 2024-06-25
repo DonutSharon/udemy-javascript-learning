@@ -142,7 +142,7 @@ const btn = document.querySelector('button');
 btn.addEventListener('click', grumpus)
 
 /* HOISTING */
-console.log(animal) // hoisted, undefined
+//console.log(animal) // hoisted, undefined
 var animal = 'capybara';
 
 cook(); // will work, displays in console
@@ -151,10 +151,44 @@ function cook() {
 	console.log("you have cooked");
 }
 
-console.log(animal2) // not hoisted, will not display
+//console.log(animal2)  // not hoisted, will not display
 let animal2 = "velociraptor"
 
-console.log(summies(1, 2)) // not hoisted
+//console.log(summies(1, 2)) // not hoisted
 const summies = function (x, y) {
 	return x + y;
 }
+
+/* ARRAY CALLBACK METHODS */
+
+/**
+* forEach
+* map - new array from existing array, transform array to another array
+* filter
+* find
+* reduce
+* some
+* every
+*/
+
+/* forEach */
+
+const numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+numArr.forEach(function (x) { console.log(x * x) })
+
+numArr.forEach(function (elem, indx) { console.log(indx, elem) })  // shows index and element
+
+/* map */
+
+// copies array, but does not change original
+const numeros = [20, 21, 22, 23, 24, 25, 26, 27];
+const palabras = ['asap', 'byob', 'rsvp', 'diy'];
+
+const doubles2 = numeros.map(function (x, i) {
+	return x * i;
+})
+
+const change = palabras.map(function (palabra) {
+	return palabra.toUpperCase().split('').join('.');
+})
