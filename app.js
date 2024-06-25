@@ -180,7 +180,6 @@ numArr.forEach(function (x) { console.log(x * x) })
 numArr.forEach(function (elem, indx) { console.log(indx, elem) })  // shows index and element
 
 /* map */
-
 // copies array, but does not change original
 const numeros = [20, 21, 22, 23, 24, 25, 26, 27];
 const palabras = ['asap', 'byob', 'rsvp', 'diy'];
@@ -192,3 +191,13 @@ const doubles2 = numeros.map(function (x, i) {
 const change = palabras.map(function (palabra) {
 	return palabra.toUpperCase().split('').join('.');
 })
+
+
+/* FUNCTIONS */
+const square = function (x) {
+	return x * x;
+}
+
+const square2 = (x) => {
+	return x * x;
+}
