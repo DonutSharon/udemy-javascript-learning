@@ -93,9 +93,7 @@ for (let sub of subreddits) {
 
 /* Functions */
 function grumpus() {
-	console.log("hello");
-	console.log("hi");
-	console.log("goodbye");
+	alert("I told you not to!");
 }
 
 /* Function Expressions */
@@ -137,3 +135,26 @@ function between(x, y) {
 }
 
 const isChild = between(0, 18);
+
+//setTimeout()  // will run function after x amount of time in milliseconds
+
+const btn = document.querySelector('button');
+btn.addEventListener('click', grumpus)
+
+/* HOISTING */
+console.log(animal) // hoisted, undefined
+var animal = 'capybara';
+
+cook(); // will work, displays in console
+
+function cook() {
+	console.log("you have cooked");
+}
+
+console.log(animal2) // not hoisted, will not display
+let animal2 = "velociraptor"
+
+console.log(summies(1, 2)) // not hoisted
+const summies = function (x, y) {
+	return x + y;
+}
