@@ -120,4 +120,20 @@ const div = function (x, y) {
 
 const operations = [add, sub, mul, div]
 
+function multiplyBy(num) {
+	return function () {
 
+	}
+}
+
+const summy = function (x, y) {
+	return x + y;
+}
+
+function between(x, y) {
+	return function (num) {
+		return num >= x && num < y;
+	}
+}
+
+const isChild = between(0, 18);
