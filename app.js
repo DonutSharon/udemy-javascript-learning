@@ -268,3 +268,35 @@ const results = votes.reduce((tally, val) => {
 	}
 	return tally
 }, {})
+
+/* Spread */
+
+// for arrays of numbers, it spreads out each value one by one, separating the array
+
+const numsss = [45, 23, 34, 7, 5]
+const maxNumsss = Math.max(...numsss)
+
+// for arrays of literals, takes info and splits it
+
+array11 = ['blah', 'blah', 'blah']
+array12 = ['blah', 'blah', 'blah']
+array13 = ['blah', 'blah', 'blah']
+
+const allarrays = [...array11, ...array12, ...array13]
+
+// for object literals
+
+const canine = {
+	legs: 4,
+	isCute: 'true',
+	babyCoded: 'yes'
+}
+
+const Spike = {
+	...canine,
+	heavy: 'yes',
+}
+
+/* Rest */
+
+// collects things down to one element
