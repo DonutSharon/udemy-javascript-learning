@@ -1,3 +1,6 @@
+console.log("ON RELOAD")
+console.log('HI GAYS')
+
 let shoppingList = ['apple sapling', 'peach sapling'];
 
 // push - add to end
@@ -241,3 +244,9 @@ const allEndInG = words.every(word => {
 	const last = word.length - 1;
 	return word[last] === 'g'
 })
+
+/* Sort pt.2 */
+
+const prices = [400.5, 3000, 99.99, 35.99, 12.00, 9500];
+const ascSort = prices.sort((a, b) => a - b);
+const descSort = prices.sort((a, b) => b - a)
