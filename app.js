@@ -201,3 +201,26 @@ const square = function (x) {
 const square2 = (x) => {
 	return x * x;
 }
+
+const multiplyagain = (x, y) => {
+	return x * y;
+}
+
+/* Implicit Functions */
+
+const multiplyagain2 = (x, y) => x * y;
+
+
+/* array.find() */
+
+// array.find('var') --> will find first instance 
+
+/* array.filter() */
+
+
+
+const numss = [34, 35, 67, 54, 109, 32, 9];
+
+const odds = numss.filter(n => n % 2 === 1)
+
+console.log(odds)
