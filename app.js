@@ -248,5 +248,23 @@ const allEndInG = words.every(word => {
 /* Sort pt.2 */
 
 const prices = [400.5, 3000, 99.99, 35.99, 12.00, 9500];
-const ascSort = prices.sort((a, b) => a - b);
-const descSort = prices.sort((a, b) => b - a)
+const ascSort = prices.sort((a, b) => a - b);              // if difference +, a before b
+const descSort = prices.sort((a, b) => b - a);              // if difference +, b before a
+
+/* Reduce */
+
+// takes an array of values and reduces to one value
+const summye = [3, 5, 7, 9, 11]
+const product = summye.reduce((total, currentValue) => { return total * currentValue });
+
+const votes = ['y', 'y', 'n', 'y', 'n']
+
+const results = votes.reduce((tally, val) => {
+	if (tally[val]) {
+		tally[val]++
+	}
+	else {
+		tally[val] = 1
+	}
+	return tally
+}, {})
