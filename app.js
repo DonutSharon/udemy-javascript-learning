@@ -87,9 +87,9 @@ const nums = {
 
 let subreddits = ['soccer', 'popheads', 'cringe', 'books'];
 
-for (let sub of subreddits) {
-	console.log(sub)
-}
+//for (let sub of subreddits) {
+//	console.log(sub)
+//}
 
 /* Functions */
 function grumpus() {
@@ -145,11 +145,11 @@ btn.addEventListener('click', grumpus)
 //console.log(animal) // hoisted, undefined
 var animal = 'capybara';
 
-cook(); // will work, displays in console
+//cook(); // will work, displays in console
 
-function cook() {
-	console.log("you have cooked");
-}
+//function cook() {
+//	console.log("you have cooked");
+//}
 
 //console.log(animal2)  // not hoisted, will not display
 let animal2 = "velociraptor"
@@ -175,9 +175,9 @@ const summies = function (x, y) {
 
 const numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-numArr.forEach(function (x) { console.log(x * x) })
+// numArr.forEach(function (x) { console.log(x * x) })
 
-numArr.forEach(function (elem, indx) { console.log(indx, elem) })  // shows index and element
+// numArr.forEach(function (elem, indx) { console.log(indx, elem) })  // shows index and element
 
 /* map */
 // copies array, but does not change original
@@ -217,10 +217,27 @@ const multiplyagain2 = (x, y) => x * y;
 
 /* array.filter() */
 
-
+// array.filter() --> will find all instances of occurence
 
 const numss = [34, 35, 67, 54, 109, 32, 9];
 
 const odds = numss.filter(n => n % 2 === 1)
 
-console.log(odds)
+// console.log(odds)
+
+/* Some and Every */
+
+const words = ['dog', 'dig', 'log', 'bag', 'wag'];
+
+// Some --> returns true if any elements pass the test function
+
+const someStartWithD = words.some(word => word[0] === 'd')
+
+// Every --> tests whether all elements in array pass the provided function; returns a boolean
+
+const all3Lets = words.every(word => word.length === 3);
+
+const allEndInG = words.every(word => {
+	const last = word.length - 1;
+	return word[last] === 'g'
+})
