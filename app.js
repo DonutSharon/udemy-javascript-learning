@@ -18,12 +18,12 @@ topSongs.push('Supernova')
 
 // Array Methods
 /**
- * concat
- * includes
- * indexOf
- * join
- * reverse
- * slice
- * splice
- * sort
+ * concat - merge arrays
+ * includes - looks for a value
+ * indexOf - finds index of value
+ * join - creates a string from array
+ * reverse - reverses array
+ * slice - copy portion of array
+ * splice - remove/replace elements
+ * sort - sorts an array
 */
