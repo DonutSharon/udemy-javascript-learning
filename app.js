@@ -300,3 +300,30 @@ const Spike = {
 /* Rest */
 
 // collects things down to one element
+
+function summie(...nums) {
+	return nums.reduce((total, currVal) => { return total + currVal })
+}
+
+function fullName(first, last, ...titles) {
+	console.log('first', first)
+	console.log('last', last)
+	console.log('titles', titles)
+}
+
+const mult = (...nums) => (nums.reduce((total, curr) => total * curr))
+
+const babies = ['Chencha', 'Spike', 'Rufus', 'Gigi'];
+
+const [youngest, , , oldest] = babies;
+
+const myBabiesCoop = {
+	old: "Gigi",
+	young: "Spike",
+	dead: "Rufus",
+	youngest: "Chencha"
+}
+
+const { } = myBabiesCoop;
+
+console.log(myBabiesCoop.old)
