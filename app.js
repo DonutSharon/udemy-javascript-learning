@@ -9,10 +9,10 @@ let shoppingList = ['apple sapling', 'peach sapling'];
 // shift - remove from start 
 
 let topSongs = [
-	'Armagedon',
-	'Heya',
-	'Fri[end]s',
-	'Wife'
+    'Armagedon',
+    'Heya',
+    'Fri[end]s',
+    'Wife'
 ];
 
 // add to end - push - changing length of array
@@ -20,14 +20,14 @@ topSongs.push('Supernova')
 
 // Array Methods
 /**
-	* concat - merge arrays
-	* includes - looks for a value
-	* indexOf - finds index of value
-	* join - creates a string from array
-	* reverse - reverses array
-	* slice - copy portion of array
-	* splice - remove/replace elements
-	* sort - sorts an array
+* concat - merge arrays
+* includes - looks for a value
+* indexOf - finds index of value
+* join - creates a string from array
+* reverse - reverses array
+* slice - copy portion of array
+* splice - remove/replace elements
+* sort - sorts an array
 */
 
 // sort - changes final array
@@ -55,26 +55,26 @@ let array2 = array1
 /* Objects - Collections of Properties [key-value pairs] */
 
 const stardewValleyInfo = {
-	season: 'Spring',
-	day: 'monday',
-	crop: 'parnsips',
-	cost: 250,
+    season: 'Spring',
+    day: 'monday',
+    crop: 'parnsips',
+    cost: 250,
 }
 
 const nums = {
-	100: "one hundred",
-	16: "sixteen",
+    100: "one hundred",
+    16: "sixteen",
 }
 
 /* Loops: Repeatedly run code many times */
 /* For-loops */
 /*
  
-	for (
-		[initialExpression];
-		[condition];
-		[incrementExpression]
-	)
+for (
+[initialExpression];
+[condition];
+[incrementExpression]
+)
  
 */
 
@@ -96,45 +96,45 @@ let subreddits = ['soccer', 'popheads', 'cringe', 'books'];
 
 /* Functions */
 function grumpus() {
-	alert("I told you not to!");
+    alert("I told you not to!");
 }
 
 /* Function Expressions */
 // functions are objects
 
 function add(x, y) {
-	return x + y;
+    return x + y;
 }
 
 const sum = function (x, y) {
-	return x + y;
+    return x + y;
 }
 const sub = function (x, y) {
-	return x - y;
+    return x - y;
 }
 const mul = function (x, y) {
-	return x * y;
+    return x * y;
 }
 const div = function (x, y) {
-	return x / y;
+    return x / y;
 }
 
 const operations = [add, sub, mul, div]
 
 function multiplyBy(num) {
-	return function () {
+    return function () {
 
-	}
+    }
 }
 
 const summy = function (x, y) {
-	return x + y;
+    return x + y;
 }
 
 function between(x, y) {
-	return function (num) {
-		return num >= x && num < y;
-	}
+    return function (num) {
+        return num >= x && num < y;
+    }
 }
 
 const isChild = between(0, 18);
@@ -159,7 +159,7 @@ let animal2 = "velociraptor"
 
 //console.log(summies(1, 2)) // not hoisted
 const summies = function (x, y) {
-	return x + y;
+    return x + y;
 }
 
 /* ARRAY CALLBACK METHODS */
@@ -188,25 +188,25 @@ const numeros = [20, 21, 22, 23, 24, 25, 26, 27];
 const palabras = ['asap', 'byob', 'rsvp', 'diy'];
 
 const doubles2 = numeros.map(function (x, i) {
-	return x * i;
+    return x * i;
 })
 
 const change = palabras.map(function (palabra) {
-	return palabra.toUpperCase().split('').join('.');
+    return palabra.toUpperCase().split('').join('.');
 })
 
 
 /* FUNCTIONS */
 const square = function (x) {
-	return x * x;
+    return x * x;
 }
 
 const square2 = (x) => {
-	return x * x;
+    return x * x;
 }
 
 const multiplyagain = (x, y) => {
-	return x * y;
+    return x * y;
 }
 
 /* Implicit Functions */
@@ -220,7 +220,7 @@ const multiplyagain2 = (x, y) => x * y;
 
 /* array.filter() */
 
-// array.filter() --> will find all instances of occurence
+
 
 const numss = [34, 35, 67, 54, 109, 32, 9];
 
@@ -241,8 +241,8 @@ const someStartWithD = words.some(word => word[0] === 'd')
 const all3Lets = words.every(word => word.length === 3);
 
 const allEndInG = words.every(word => {
-	const last = word.length - 1;
-	return word[last] === 'g'
+    const last = word.length - 1;
+    return word[last] === 'g'
 })
 
 /* Sort pt.2 */
@@ -260,13 +260,13 @@ const product = summye.reduce((total, currentValue) => { return total * currentV
 const votes = ['y', 'y', 'n', 'y', 'n']
 
 const results = votes.reduce((tally, val) => {
-	if (tally[val]) {
-		tally[val]++
-	}
-	else {
-		tally[val] = 1
-	}
-	return tally
+    if (tally[val]) {
+        tally[val]++
+    }
+    else {
+        tally[val] = 1
+    }
+    return tally
 }, {})
 
 /* Spread */
@@ -287,14 +287,14 @@ const allarrays = [...array11, ...array12, ...array13]
 // for object literals
 
 const canine = {
-	legs: 4,
-	isCute: 'true',
-	babyCoded: 'yes'
+    legs: 4,
+    isCute: 'true',
+    babyCoded: 'yes'
 }
 
 const Spike = {
-	...canine,
-	heavy: 'yes',
+    ...canine,
+    heavy: 'yes',
 }
 
 /* Rest */
@@ -302,13 +302,13 @@ const Spike = {
 // collects things down to one element
 
 function summie(...nums) {
-	return nums.reduce((total, currVal) => { return total + currVal })
+    return nums.reduce((total, currVal) => { return total + currVal })
 }
 
 function fullName(first, last, ...titles) {
-	console.log('first', first)
-	console.log('last', last)
-	console.log('titles', titles)
+    console.log('first', first)
+    console.log('last', last)
+    console.log('titles', titles)
 }
 
 const mult = (...nums) => (nums.reduce((total, curr) => total * curr))
@@ -318,12 +318,48 @@ const babies = ['Chencha', 'Spike', 'Rufus', 'Gigi'];
 const [youngest, , , oldest] = babies;
 
 const myBabiesCoop = {
-	old: "Gigi",
-	young: "Spike",
-	dead: "Rufus",
-	youngest: "Chencha"
+    old: "Gigi",
+    young: "Spike",
+    dead: "Rufus",
+    youngest: "Chencha"
 }
 
 const { } = myBabiesCoop;
 
 console.log(myBabiesCoop.old)
+
+// ! this
+const rufus = {
+    first: 'Rufus',
+    last: 'Maldonado',
+    previousName: 'Pistol Pete',
+    fullName() {
+        const {
+            first,
+            last,
+            previousName
+        } = this;
+        console.log(`${first} ${last} previously ${previousName}`)
+    }
+}
+
+const koreaboo = {
+    phrases: ['annyeonghaseyo', 'saranghae', 'kamsahabmnida', 'hana, dul, set'],
+    pickPhrase() {
+        const { phrases } = this;
+        const idx = Math.floor(Math.random() * phrases.length);
+        return phrases[idx];
+    },
+    start() {
+        //setInterval(function () { console.log('IAIHIH') }, 3000)
+        this.timerId = setInterval(() => {
+            console.log(this.pickPhrase())
+        }, 3000)
+    },
+    stop() {
+        clearInterval(this.timerId);
+    }
+}
+
+//koreaboo.start()
+//koreaboo.stop()
